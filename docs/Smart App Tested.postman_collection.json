@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "433b39b7-096e-4eed-b48d-410955465daa",
+		"name": "Smart App Tested",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47344440"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/auth/signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Samit\",\r\n  \"email\": \"samit@example.com\",\r\n  \"password\": \"Samit123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQwMzIwMywiZXhwIjoxNzU0NDEwNDAzfQ.FzeSN0uSSK3Scz6F-cPPwtjlV80XIid34vDzx6m80wY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"samit@example.com\",\r\n    \"password\": \"Samit123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQxOTEyMCwiZXhwIjoxNzU0NDI2MzIwfQ.y9vWpgh_LsRhstj2Xo9QcBJvWz1tL_ZKwNoGU4W5A4I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My task\",\r\n    \"description\": \"Do something\",\r\n    \"status\": \"in-progress\",\r\n    \"due_date\": \"2025-08-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQxOTEyMCwiZXhwIjoxNzU0NDI2MzIwfQ.y9vWpgh_LsRhstj2Xo9QcBJvWz1tL_ZKwNoGU4W5A4I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Second task\",\r\n    \"description\": \"Did Something\",\r\n    \"status\": \"done\",\r\n    \"due_date\": \"2025-08-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQxOTEyMCwiZXhwIjoxNzU0NDI2MzIwfQ.y9vWpgh_LsRhstj2Xo9QcBJvWz1tL_ZKwNoGU4W5A4I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks/689253680245ab340bcb879f",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQxOTEyMCwiZXhwIjoxNzU0NDI2MzIwfQ.y9vWpgh_LsRhstj2Xo9QcBJvWz1tL_ZKwNoGU4W5A4I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Second task Completed\",\r\n    \"description\": \"Done That  Something\",\r\n    \"status\": \"done\",\r\n    \"due_date\": \"2025-08-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/689253680245ab340bcb879f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"689253680245ab340bcb879f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQxOTEyMCwiZXhwIjoxNzU0NDI2MzIwfQ.y9vWpgh_LsRhstj2Xo9QcBJvWz1tL_ZKwNoGU4W5A4I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks/689253680245ab340bcb879f",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTFmOTFkYTRmMzRjMGQzNDIyZDJiNCIsImlhdCI6MTc1NDQxOTEyMCwiZXhwIjoxNzU0NDI2MzIwfQ.y9vWpgh_LsRhstj2Xo9QcBJvWz1tL_ZKwNoGU4W5A4I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Second task Completed\",\r\n    \"description\": \"Done That  Something\",\r\n    \"status\": \"done\",\r\n    \"due_date\": \"2025-08-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/tasks/689253680245ab340bcb879f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"tasks",
+						"689253680245ab340bcb879f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTMxNDVhODZhNWUwYmQzMzIyODdhYiIsImlhdCI6MTc1NDQ4MDM5NiwiZXhwIjoxNzU0NDg3NTk2fQ.Nh4tk4Tiei63orkDwS_eAWvDR8Qi26deXelfNIL64uE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tasks\": [\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My First Task\",\r\n            \"description\": \"Complete backend APIs\",\r\n            \"status\": \"in-progress\",\r\n            \"due_date\": \"2025-08-10T00:00:00.000Z\"\r\n        },\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My Second Task\",\r\n            \"description\": \"Build React frontend\",\r\n            \"status\": \"todo\",\r\n            \"due_date\": \"2025-08-12T00:00:00.000Z\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ai/summarize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ai",
+						"summarize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1Y2UyOTNkM2Y1MmJjMGFjZWNjYiIsImlhdCI6MTc1NDQ4ODAzOSwiZXhwIjoxNzU0NDk1MjM5fQ.osg4Rb54l4PtO0OHklk_2kXLGq-8jSq9EGUdY8nXBAk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tasks\": [\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My First Task\",\r\n            \"description\": \"Complete backend APIs\",\r\n            \"status\": \"in-progress\",\r\n            \"due_date\": \"2025-08-10T00:00:00.000Z\"\r\n        },\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My Second Task\",\r\n            \"description\": \"Build React frontend\",\r\n            \"status\": \"todo\",\r\n            \"due_date\": \"2025-08-12T00:00:00.000Z\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ai/summarize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ai",
+						"summarize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

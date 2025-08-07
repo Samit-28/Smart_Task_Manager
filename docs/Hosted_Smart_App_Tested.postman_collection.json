@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "08af8a97-7a0a-4140-9465-83cef222bd1f",
+		"name": "Hosted Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47344440"
+	},
+	"item": [
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/auth/signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Eshal\",\r\n    \"email\": \"eshal@example.com\",\r\n    \"password\": \"eshal123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Eshal\",\r\n    \"email\": \"eshal@example.com\",\r\n    \"password\": \"eshal123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDU2ODgyMiwiZXhwIjoxNzU0NTc2MDIyfQ.p6h2xBwrxh6E2Z5GSofZLkvSSg314TsrMcoVFjhyUQA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Second task\",\r\n    \"description\": \"Did Something\",\r\n    \"status\": \"done\",\r\n    \"due_date\": \"14-Aug-2025\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/tasks",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDQ4ODI1NCwiZXhwIjoxNzU0NDk1NDU0fQ.OHWb9e-3AFWKOEra_o1Yd8twslo5PFNhoC0VdYnIS6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/tasks",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/tasks/68935ef07b52580c44e2b2d1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDQ4ODI1NCwiZXhwIjoxNzU0NDk1NDU0fQ.OHWb9e-3AFWKOEra_o1Yd8twslo5PFNhoC0VdYnIS6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Second task Completed\",\r\n    \"description\": \"Done That  Something\",\r\n    \"status\": \"done\",\r\n    \"due_date\": \"2025-08-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/tasks/68935ef07b52580c44e2b2d1",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"68935ef07b52580c44e2b2d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDQ4ODI1NCwiZXhwIjoxNzU0NDk1NDU0fQ.OHWb9e-3AFWKOEra_o1Yd8twslo5PFNhoC0VdYnIS6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/tasks",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/ai/summarize",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDQ4ODI1NCwiZXhwIjoxNzU0NDk1NDU0fQ.OHWb9e-3AFWKOEra_o1Yd8twslo5PFNhoC0VdYnIS6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tasks\": [\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My First Task\",\r\n            \"description\": \"Complete backend APIs\",\r\n            \"status\": \"in-progress\",\r\n            \"due_date\": \"2025-08-10T00:00:00.000Z\"\r\n        },\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My Second Task\",\r\n            \"description\": \"Build React frontend\",\r\n            \"status\": \"todo\",\r\n            \"due_date\": \"2025-08-12T00:00:00.000Z\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/ai/summarize",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"ai",
+						"summarize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/tasks/68935ef07b52580c44e2b2d1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDQ4ODI1NCwiZXhwIjoxNzU0NDk1NDU0fQ.OHWb9e-3AFWKOEra_o1Yd8twslo5PFNhoC0VdYnIS6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/tasks/68935ef07b52580c44e2b2d1",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"68935ef07b52580c44e2b2d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://smarttaskmanager-production.up.railway.app/api/ai/summarize",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTM1ZGE4N2I1MjU4MGM0NGUyYjJjNCIsImlhdCI6MTc1NDQ4ODI1NCwiZXhwIjoxNzU0NDk1NDU0fQ.OHWb9e-3AFWKOEra_o1Yd8twslo5PFNhoC0VdYnIS6I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tasks\": [\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My First Task\",\r\n            \"description\": \"Complete backend APIs\",\r\n            \"status\": \"in-progress\",\r\n            \"due_date\": \"2025-08-10T00:00:00.000Z\"\r\n        },\r\n        {\r\n            \"user\": \"USER_ID_HERE\",\r\n            \"title\": \"My Second Task\",\r\n            \"description\": \"Build React frontend\",\r\n            \"status\": \"todo\",\r\n            \"due_date\": \"2025-08-12T00:00:00.000Z\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://smarttaskmanager-production.up.railway.app/api/ai/summarize",
+					"protocol": "https",
+					"host": [
+						"smarttaskmanager-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"ai",
+						"summarize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
